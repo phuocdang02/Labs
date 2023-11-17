@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Camera Alexandre de Rhodes",
+    "latitude": 10.778968,
+    "longitude": 106.696054,
+    "cameraIp": "123456DSDGSDF",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "085fd501-3f96-4027-b85d-938f51a3ee7f"
+  },
+  {
+    "name": "Camera Nguyen Du",
+    "latitude": 10.780097,
+    "longitude": 106.700708,
+    "cameraIp": "AGRGV45DG45",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "085fd501-3f96-4027-b85d-938f51a3ee7f"
+  },
+  {
+    "name": "Camera Ly Tu Trong",
+    "latitude": 10.777776,
+    "longitude": 106.700931,
+    "cameraIp": "123456DSHHHDF",
+    "status": "live",
+    "source": "assets/videos/video3.mp4",
+    "layerId": "085fd501-3f96-4027-b85d-938f51a3ee7f"
+  },
+  {
+    "name": "Camera Le Thanh Ton",
+    "latitude": 10.774485,
+    "longitude": 106.699163,
+    "cameraIp": "AGRGV45DYY5",
+    "status": "live",
+    "source": "assets/videos/video4.mp4",
+    "layerId": "085fd501-3f96-4027-b85d-938f51a3ee7f"
+  },
+  {
+    "name": "Camera Truong Dinh",
+    "latitude": 10.775959,
+    "longitude": 106.691996,
+    "cameraIp": "AGR22V45DYY5",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "085fd501-3f96-4027-b85d-938f51a3ee7f"
+  },
+  {
+    "name": "Camera D6",
+    "latitude": 10.771763,
+    "longitude": 106.721244,
+    "cameraIp": "AGRG23445DYY5",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "76fe0cb2-51f8-4ba2-8155-0311910fee0a"
+  },
+  {
+    "name": "Camera Hoang The Thien",
+    "latitude": 10.768545,
+    "longitude": 106.721099,
+    "cameraIp": "AGRG23455DYY5",
+    "status": "live",
+    "source": "assets/videos/video3.mp4",
+    "layerId": "76fe0cb2-51f8-4ba2-8155-0311910fee0a"
+  },
+  {
+    "name": "Camera N7",
+    "latitude": 10.768701,
+    "longitude": 106.723899,
+    "cameraIp": "AGRG23455DRY5",
+    "status": "live",
+    "source": "assets/videos/video4.mp4",
+    "layerId": "76fe0cb2-51f8-4ba2-8155-0311910fee0a"
+  },
+  {
+    "name": "Camera So 10",
+    "latitude": 10.771715,
+    "longitude": 106.72583,
+    "cameraIp": "BGRG23455DRY5",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "76fe0cb2-51f8-4ba2-8155-0311910fee0a"
+  },
+  {
+    "name": "Camera Camera Hoang The Thien 2",
+    "latitude": 10.772815,
+    "longitude": 106.724513,
+    "cameraIp": "BGRG23455DRY5",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "76fe0cb2-51f8-4ba2-8155-0311910fee0a"
+  },
+  {
+    "name": "Camera Ton Dat Tien",
+    "latitude": 10.724064,
+    "longitude": 106.716062,
+    "cameraIp": "ZGRG23455DRY5",
+    "status": "live",
+    "source": "assets/videos/video3.mp4",
+    "layerId": "0023e2dc-dbca-4137-9286-fa03178b5d4b"
+  },
+  {
+    "name": "Camera N-Nam",
+    "latitude": 10.726675,
+    "longitude": 106.715861,
+    "cameraIp": "ZGRG23455D5Y5",
+    "status": "live",
+    "source": "assets/videos/video4.mp4",
+    "layerId": "0023e2dc-dbca-4137-9286-fa03178b5d4b"
+  },
+  {
+    "name": "Camera Nguyen Cao",
+    "latitude": 10.723416,
+    "longitude": 106.712436,
+    "cameraIp": "ZGRG23455DTY5",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "0023e2dc-dbca-4137-9286-fa03178b5d4b"
+  },
+  {
+    "name": "Camera Phu Gia",
+    "latitude": 10.725126,
+    "longitude": 106.714221,
+    "cameraIp": "ZGRG234555TY5",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "0023e2dc-dbca-4137-9286-fa03178b5d4b"
+  },
+  {
+    "name": "Camera Ha Huy Tap",
+    "latitude": 10.726582,
+    "longitude": 106.712343,
+    "cameraIp": "ZGRG23455D545",
+    "status": "live",
+    "source": "assets/videos/video3.mp4",
+    "layerId": "0023e2dc-dbca-4137-9286-fa03178b5d4b"
+  },
+  {
+    "name": "Camera Pham Van Nghi - Nguyen Van Linh",
+    "latitude": 10.72931,
+    "longitude": 106.706792,
+    "cameraIp": "ZGRG23455D5P45",
+    "status": "live",
+    "source": "assets/videos/video4.mp4",
+    "layerId": "0bd478d1-8c92-4a55-ba56-346690eab37e"
+  },
+  {
+    "name": "Camera Dang Dai Do - Nguyen Van Linh",
+    "latitude": 10.729419,
+    "longitude": 106.710409,
+    "cameraIp": "ZGRG23455D5P45",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "0bd478d1-8c92-4a55-ba56-346690eab37e"
+  },
+  {
+    "name": "Camera Hung Gia 4",
+    "latitude": 10.73231,
+    "longitude": 106.706205,
+    "cameraIp": "ZGRG23455D5P45",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "0bd478d1-8c92-4a55-ba56-346690eab37e"
+  },
+  {
+    "name": "Camera Cao Trieu Phat",
+    "latitude": 10.732025,
+    "longitude": 106.711162,
+    "cameraIp": "ZGRG23455D5P45",
+    "status": "live",
+    "source": "assets/videos/video3.mp4",
+    "layerId": "0bd478d1-8c92-4a55-ba56-346690eab37e"
+  },
+  {
+    "name": "Camera Hung Thai 2 - Bui Bang Doan",
+    "latitude": 10.734655,
+    "longitude": 106.708393,
+    "cameraIp": "ZGRG23455D5YY45",
+    "status": "live",
+    "source": "assets/videos/video4.mp4",
+    "layerId": "0bd478d1-8c92-4a55-ba56-346690eab37e"
+  },
+  {
+    "name": "Camera Nguyen Luong Bang - Nguyen Van Linh",
+    "latitude": 10.731996,
+    "longitude": 106.719729,
+    "cameraIp": "ZGRG23455DTT45",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "0f7254e6-0499-4727-8939-a3f1a5567163"
+  },
+  {
+    "name": "Camera Ton Dat Tien - Thung Lung Xanh",
+    "latitude": 10.730826,
+    "longitude": 106.717733,
+    "cameraIp": "ZGRG23455D3T45",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "0f7254e6-0499-4727-8939-a3f1a5567163"
+  },
+  {
+    "name": "Camera Nguyen Dong Chi - Nguyen Luong Bang",
+    "latitude": 10.733915,
+    "longitude": 106.718409,
+    "cameraIp": "ZGRG23455D3T05",
+    "status": "live",
+    "source": "assets/videos/video3.mp4",
+    "layerId": "0f7254e6-0499-4727-8939-a3f1a5567163"
+  },
+  {
+    "name": "Camera Nguyen Dong Chi - Ton Dat Tien",
+    "latitude": 10.734052,
+    "longitude": 106.71356,
+    "cameraIp": "ZGRG23455D9T05",
+    "status": "live",
+    "source": "assets/videos/video4.mp4",
+    "layerId": "0f7254e6-0499-4727-8939-a3f1a5567163"
+  },
+  {
+    "name": "Camera Thung Lung Xanh - Quan Am Bo Tat",
+    "latitude": 10.731522,
+    "longitude": 106.717455,
+    "cameraIp": "ZGRG2M455D9T05",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "0f7254e6-0499-4727-8939-a3f1a5567163"
+  },
+  {
+    "name": "Camera Nguyen Van Linh - Nguyen Luong Bang",
+    "latitude": 10.730942,
+    "longitude": 106.720412,
+    "cameraIp": "ZGRGMM455D9T05",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "8ad67270-bf8c-4f99-a8f1-b4fee446134c"
+  },
+  {
+    "name": "Camera Tan Phu - Hoang Van Thai",
+    "latitude": 10.732209,
+    "longitude": 106.725423,
+    "cameraIp": "ZGRGMP455D9T05",
+    "status": "live",
+    "source": "assets/videos/video3.mp4",
+    "layerId": "8ad67270-bf8c-4f99-a8f1-b4fee446134c"
+  },
+  {
+    "name": "Camera Tan Phu - Raymondienne",
+    "latitude": 10.729169,
+    "longitude": 106.72721,
+    "cameraIp": "Z44GMP455D9T05",
+    "status": "live",
+    "source": "assets/videos/video4.mp4",
+    "layerId": "8ad67270-bf8c-4f99-a8f1-b4fee446134c"
+  },
+  {
+    "name": "Camera Nguyen Luong Bang - Tran Van Tra",
+    "latitude": 10.72557,
+    "longitude": 106.723609,
+    "cameraIp": "Z44GMP455DUU05",
+    "status": "live",
+    "source": "assets/videos/video1.mp4",
+    "layerId": "8ad67270-bf8c-4f99-a8f1-b4fee446134c"
+  },
+  {
+    "name": "Camera Ton Dat Tien - Morison",
+    "latitude": 10.726596,
+    "longitude": 106.720201,
+    "cameraIp": "Z44GMP45577U05",
+    "status": "live",
+    "source": "assets/videos/video2.mp4",
+    "layerId": "8ad67270-bf8c-4f99-a8f1-b4fee446134c"
+  },
+  {
+    "name": "1st Floor Balcony",
+    "latitude": 212.19730941704037,
+    "longitude": 289.6346356916579,
+    "cameraIp": "AGRGVBBBSBBF68",
+    "status": "live",
+    "source": "assets/videos/tang1_ban_cong.mp4",
+    "layerId": "39143e6d-d823-48b7-a05d-e0e8091ebc79"
+  },
+  {
+    "name": "2nd Floor Balcony",
+    "latitude": 257.63724035608305,
+    "longitude": 179.12565997888066,
+    "cameraIp": "AGRGV2455RT57",
+    "status": "live",
+    "source": "assets/videos/tang2_ban_cong.mp4",
+    "layerId": "39143e6d-d823-48b7-a05d-e0e8091ebc79"
+  },
+  {
+    "name": "Main Door",
+    "latitude": 203.98729446935727,
+    "longitude": 394.3653643083421,
+    "cameraIp": "AGRGV45DG4346",
+    "status": "live",
+    "source": "assets/videos/tret_cua.mp4",
+    "layerId": "39143e6d-d823-48b7-a05d-e0e8091ebc79"
+  },
+  {
+    "name": "Main Door",
+    "latitude": 1331.4527486102531,
+    "longitude": 183.83949313621966,
+    "cameraIp": "AGRGV45444DG46",
+    "status": "live",
+    "source": "assets/videos/tret_cua.mp4",
+    "layerId": "57232677-6b7a-4908-8f9f-d29ed8d9b8c2"
+  },
+  {
+    "name": "Garage",
+    "latitude": 950.6988130563798,
+    "longitude": 294.29144667370645,
+    "cameraIp": "AGRGV45TTTTTRG57",
+    "status": "live",
+    "source": "assets/videos/tret_nha_xe.mp4",
+    "layerId": "57232677-6b7a-4908-8f9f-d29ed8d9b8c2"
+  },
+  {
+    "name": "Dining Room",
+    "latitude": 359.16617210682494,
+    "longitude": 369.90285110876454,
+    "cameraIp": "AGRGYYYYDG68",
+    "status": "live",
+    "source": "assets/videos/tret_phong_an.mp4",
+    "layerId": "57232677-6b7a-4908-8f9f-d29ed8d9b8c2"
+  },
+  {
+    "name": "Living Room",
+    "latitude": 339.56145768993207,
+    "longitude": 202.10559662090813,
+    "cameraIp": "AGRGV45AADF46",
+    "status": "live",
+    "source": "assets/videos/tang1_phong_khach.mp4",
+    "layerId": "e3bebb6b-317f-4ace-b816-0f260e1d8fa8"
+  },
+  {
+    "name": "Bed room",
+    "latitude": 999.8842729970327,
+    "longitude": 266.5765575501584,
+    "cameraIp": "AGRGV45GGDF57",
+    "status": "live",
+    "source": "assets/videos/tang1_phong_ngu.mp4",
+    "layerId": "e3bebb6b-317f-4ace-b816-0f260e1d8fa8"
+  },
+  {
+    "name": "1st Floor Balcony",
+    "latitude": 1234.3545994065282,
+    "longitude": 321.63041182682156,
+    "cameraIp": "AGRGV45DVVF68",
+    "status": "live",
+    "source": "assets/videos/tang1_ban_cong.mp4",
+    "layerId": "e3bebb6b-317f-4ace-b816-0f260e1d8fa8"
+  },
+  {
+    "name": "Kid Room 2",
+    "latitude": 558.9688427299703,
+    "longitude": 224.60823653643084,
+    "cameraIp": "AGRGV45RTBBB46",
+    "status": "live",
+    "source": "assets/videos/tang2_phong_ngu_2.mp4",
+    "layerId": "a4a1d510-f693-4d7f-aef0-5a8547b5f4be"
+  },
+  {
+    "name": "2nd Floor Balcony",
+    "latitude": 1226.09635577517,
+    "longitude": 330.3062302006336,
+    "cameraIp": "AGRGV45R444T57",
+    "status": "live",
+    "source": "assets/videos/tang2_ban_cong.mp4",
+    "layerId": "a4a1d510-f693-4d7f-aef0-5a8547b5f4be"
+  },
+  {
+    "name": "Kid Room 1",
+    "latitude": 893.8798219584569,
+    "longitude": 225.38542766631468,
+    "cameraIp": "AGRGV454544RT68",
+    "status": "live",
+    "source": "assets/videos/tang2_phong_ngu.mp4",
+    "layerId": "a4a1d510-f693-4d7f-aef0-5a8547b5f4be"
+  }
+]

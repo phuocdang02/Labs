@@ -1,0 +1,18 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "processJson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "process": "node processJson.js",
+    "read": "node readJavascriptObject.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "uuid": "^9.0.1"
+  }
+}
