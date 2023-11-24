@@ -1,23 +1,144 @@
 [
   {
-    "navId": 1,
-    "routerLink": "open-street-map",
-    "icon": "map",
-    "label": "Open Street Map",
-    "layers": []
+    "layer_id": "1",
+    "layer_name": "District 1",
+    "type_map": {
+      "type_map_id": "0",
+      "type_map_name": "google map"
+    },
+    "latitude": 10.77791,
+    "longitude": 106.696596,
+    "zoom": 17,
+    "status": "active",
+    "camera_default_id": "1"
   },
   {
-    "navId": 0,
-    "routerLink": "gooogle-map",
-    "icon": "map",
-    "label": "Google Map",
-    "layers": []
+    "layer_id": "2",
+    "layer_name": "District 2",
+    "type_map": {
+      "type_map_id": "0",
+      "type_map_name": "google map"
+    },
+    "latitude": 10.769785,
+    "longitude": 106.72374,
+    "zoom": 17,
+    "status": "working",
+    "camera_default_id": "6"
   },
   {
-    "navId": 99,
-    "routerLink": "logout",
-    "icon": "logout",
-    "label": "Logout",
-    "layers": []
+    "layer_id": "3",
+    "layer_name": "District 7",
+    "type_map": {
+      "type_map_id": "0",
+      "type_map_name": "google map"
+    },
+    "latitude": 10.72583,
+    "longitude": 106.714637,
+    "zoom": 17,
+    "status": "working",
+    "camera_default_id": "11"
+  },
+  {
+    "layer_id": "4",
+    "layer_name": "Phú Mỹ Hưng - Khu Văn Hóa Giải Trí",
+    "type_map": {
+      "type_map_id": "1",
+      "type_map_name": "open street map"
+    },
+    "latitude": 10.732011,
+    "longitude": 106.710028,
+    "zoom": 17,
+    "status": "active",
+    "camera_default_id": "16"
+  },
+  {
+    "layer_id": "5",
+    "layer_name": "Phú Mỹ Hưng - Khu Y Tế Điều Dưỡng",
+    "type_map": {
+      "type_map_id": "1",
+      "type_map_name": "open street map"
+    },
+    "latitude": 10.7329338,
+    "longitude": 106.718344,
+    "zoom": 17,
+    "status": "working",
+    "camera_default_id": "21"
+  },
+  {
+    "layer_id": "6",
+    "layer_name": "Phú Mỹ Hưng - Khu Thương Mại Tài Chính Quốc Tế\t",
+    "type_map": {
+      "type_map_id": "1",
+      "type_map_name": "open street map"
+    },
+    "latitude": 10.7291081,
+    "longitude": 106.72288,
+    "zoom": 16,
+    "status": "working",
+    "camera_default_id": "26"
+  },
+  {
+    "layer_id": "7",
+    "layer_name": "Longitudinal Section",
+    "type_map": {
+      "type_map_id": "2",
+      "type_map_name": "interior map"
+    },
+    "latitude": 0,
+    "longitude": 0,
+    "zoom": 1,
+    "status": "active",
+    "source": "../../assets/images/matcatdoc.png",
+    "camera_default_id": "cross_F0",
+    "height": 684,
+    "width": 845
+  },
+  {
+    "layer_id": "8",
+    "layer_name": "Ground Floor",
+    "type_map": {
+      "type_map_id": "2",
+      "type_map_name": "interior map"
+    },
+    "latitude": 0,
+    "longitude": 0,
+    "zoom": 1,
+    "status": "working",
+    "source": "../../assets/images/tangtret.png",
+    "camera_default_id": "floor_tret_R1",
+    "height": 702,
+    "width": 1498
+  },
+  {
+    "layer_id": "9",
+    "layer_name": "1st Floor",
+    "type_map": {
+      "type_map_id": "2",
+      "type_map_name": "interior map"
+    },
+    "latitude": 0,
+    "longitude": 0,
+    "zoom": 1,
+    "status": "working",
+    "source": "../../assets/images/tang1.png",
+    "camera_default_id": "floor_1_R3",
+    "height": 686,
+    "width": 1466
+  },
+  {
+    "layer_id": "10",
+    "layer_name": "2nd Floor",
+    "type_map": {
+      "type_map_id": "2",
+      "type_map_name": "interior map"
+    },
+    "latitude": 0,
+    "longitude": 0,
+    "zoom": 1,
+    "status": "working",
+    "source": "../../assets/images/tang2.png",
+    "camera_default_id": "floor_2_R2",
+    "height": 736,
+    "width": 1450
   }
 ]
