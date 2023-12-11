@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
+<en-export export-date="20231206T042417Z" application="Evernote" version="10.67.4">
+  <note>
+    <title>Note 10-06-2023</title>
+    <created>20231006T083753Z</created>
+    <updated>20231117T065828Z</updated>
+    <note-attributes>
+      <author>Ha Dang</author>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Upload MMSOFTS site into AWS Fargate</div><div><br/></div><div style="--en-task-group:true; --en-id:9548b808-2c00-4549-a5c5-8e36a1e5dbe3;--en-content-hash:890741c132f8731b379fa6aa5f4a28d2;-webkit-user-modify:read-only;-moz-user-modify:read-only;user-modify:read-only;border-radius:3px;border:1px solid rgba(182,182,182,0.09);background:rgba(174,174,174,0.09);overflow:hidden;color:#868686"><div style="background:rgba(182,182,182,0.09) no-repeat 6px 6px url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzg2ODY4NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjcyNTEgMjBDMjAuMTgxIDIwIDIwLjYwMTEgMTkuNzU2IDIwLjgyOSAxOS4zNkMyMS4wNTcgMTguOTY0IDIxLjA1NyAxOC40NzYgMjAuODI5IDE4LjA4TDEzLjEwMzEgNC42Mzk5OUMxMi44NzYgNC4yNDM5OSAxMi40NTUxIDQgMTIgNEMxMS41NDQ5IDQgMTEuMTI0IDQuMjQzOTkgMTAuODk2MSA0LjYzOTk5TDMuMTcwOTggMTguMDhDMi45NDMwMSAxOC40NzYgMi45NDMwMSAxOC45NjQgMy4xNzA5OCAxOS4zNkMzLjM5ODEgMTkuNzU2IDMuODE4OTMgMjAgNC4yNzQwOCAyMEgxOS43MjUxWk00Ljg2NDg5IDE4LjRMMTIgNS45ODc5OEwxOS4xMzUxIDE4LjRINC44NjQ4OVoiLz4KPHBhdGggZD0iTTEyLjc1IDEwLjU3NTJDMTIuNzUgMTAuMTYxIDEyLjQxNDIgOS44MjUyMyAxMiA5LjgyNTIzQzExLjU4NTggOS44MjUyMyAxMS4yNSAxMC4xNjEgMTEuMjUgMTAuNTc1MlYxMy4yOTc5QzExLjI1IDEzLjcxMjEgMTEuNTg1OCAxNC4wNDc5IDEyIDE0LjA0NzlDMTIuNDE0MiAxNC4wNDc5IDEyLjc1IDEzLjcxMjEgMTIuNzUgMTMuMjk3OVYxMC41NzUyWiIvPgo8cGF0aCBkPSJNMTIuODc1IDE1Ljk1MTFDMTIuODc1IDE2LjQzNDQgMTIuNDgzMiAxNi44MjYxIDEyIDE2LjgyNjFDMTEuNTE2OCAxNi44MjYxIDExLjEyNSAxNi40MzQ0IDExLjEyNSAxNS45NTExQzExLjEyNSAxNS40Njc5IDExLjUxNjggMTUuMDc2MSAxMiAxNS4wNzYxQzEyLjQ4MzIgMTUuMDc2MSAxMi44NzUgMTUuNDY3OSAxMi44NzUgMTUuOTUxMVoiLz4KPC9zdmc+Cg==&quot;);padding:8px 38px;font-weight:600">Content not supported</div><div style="padding:2px 6px;margin: 1em">This block is a placeholder for Tasks, which has been officially released on the newest version of Evernote and is no longer supported on this version. Deleting or moving this block may cause unexpected behavior in newer versions of Evernote.</div></div></en-note>      ]]>
+    </content>
+    <task>
+      <title>Multiple Wordpress in 1 container</title>
+      <created>20231006T091623Z</created>
+      <updated>20231018T072128Z</updated>
+      <taskStatus>completed</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>B</sortWeight>
+      <noteLevelID>a3bfdce9-146f-4b0a-adde-a7482b114495</noteLevelID>
+      <taskGroupNoteLevelID>9548b808-2c00-4549-a5c5-8e36a1e5dbe3</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20231018T072128Z</statusUpdated>
+      <creator>243343120</creator>
+      <lastEditor>243343120</lastEditor>
+    </task>
+    <task>
+      <title>Multiple Magento in 1 multi-containers</title>
+      <created>20231006T091645Z</created>
+      <updated>20231018T072128Z</updated>
+      <taskStatus>completed</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>J</sortWeight>
+      <noteLevelID>9153dac4-5159-452d-83f1-13137ca2709d</noteLevelID>
+      <taskGroupNoteLevelID>9548b808-2c00-4549-a5c5-8e36a1e5dbe3</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20231018T072128Z</statusUpdated>
+      <creator>243343120</creator>
+      <lastEditor>243343120</lastEditor>
+    </task>
+  </note>
+  <note>
+    <title>Note 10-24-2023</title>
+    <created>20231024T073915Z</created>
+    <updated>20231117T065902Z</updated>
+    <note-attributes>
+      <author>Ha Dang</author>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><span style="--en-highlight:yellow;background-color: #ffef9e;">Complete <a href="https://www.udemy.com/course/an-introduction-to-owasp-top-10-vulnerabilities/learn/lecture/18881108#overview" rev="en_rl_none">OWASP Top 10</a> first.</span></div><div><br/></div><ol><li><div><b>Deployment:</b></div></li></ol><div>Close EC2 instance MMSOFTS website.</div><div>Config Fargate into live server with domain <a href="http://www.mmsofts.com" rev="en_rl_none">www.mmsofts.com</a>.</div><div>Move SSL certifications into Docker image ( Wordpress image).</div><div><br/></div><ol start="2"><li><div><b>Learning:</b></div></li></ol><div>AWS Cloud Solution Architecture Professional Certificate.</div><div>Listen Fin365 meeting and rewrite what they said in the meeting.</div><div><br/></div><ol start="3"><li><div><b>Long:</b> </div></li></ol><div>Reference Mizuho source code backend using DOTNET </div><div>Base and learning for deploy own back-end source code.</div><div><br/></div><ol start="4"><li><div><b>Upwork:</b></div></li></ol><div>Except India, China, Russia (So Viet)'s job</div><div>Project  > 500$ OR > 10$/hrs</div><div><br/></div><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Note 11-09-2023</title>
+    <created>20231110T062345Z</created>
+    <updated>20231117T065847Z</updated>
+    <note-attributes>
+      <author>Ha Dang</author>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>NXC App Backend progress</div><div><br/></div><div>Complete write sample API for NXC App</div><div><br/></div><div>Cào data -> áp dụng AI</div><div><br/></div><div>Job Ads</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Note 11-14-2023</title>
+    <created>20231114T073030Z</created>
+    <updated>20231117T065840Z</updated>
+    <note-attributes>
+      <author>Ha Dang</author>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Scrape Facebook, LinkedIn</div><div><br/></div><div>Import CSV files into MySQL database then exports SQL files after all process -  DROP DATABASE for next CSV.</div><div><br/></div><div><b>Step by Step</b></div><ol><li><div>Import CSV (DTL)</div></li><li><div>Generate database with CSV</div></li><li><div>Export database into dump file</div></li><li><div>Drop database, data cleanse</div></li><li><div>Back to step 1</div></li></ol><div><br/></div><div><b>Conditions filters: </b></div><ol><li><div>Categorize for type of job ads</div></li><li><div>Data Transforms</div></li><li><div>Data Sentiment</div></li><li><div>_job_ads_lock</div></li></ol><div><br/></div><div><br/></div><div><br/></div><div><a rev="en_rl_none" href="http://Kaggle.com">Kaggle.com</a> Dataset samples</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Note 11-21-2023</title>
+    <created>20231121T033602Z</created>
+    <updated>20231122T012331Z</updated>
+    <note-attributes>
+      <author>Ha Dang</author>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div><div>AWS Fargate seem more expensive than EC2</div><div>Check Wordpress EC2 still running ?</div><div><br/></div><div><b>Environment Compliant</b></div><div>Change to Microsoft</div><div>mail google -> @hotmail, microsoft mail</div><div>Old email can be transfer to microsoft mail ?</div><div>drive -> microsoft ( how much GB/person)</div><div>AWS -> Azure Cloud</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Note 11-28-2023</title>
+    <created>20231128T080415Z</created>
+    <updated>20231129T093339Z</updated>
+    <note-attributes>
+      <author>Ha Dang</author>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div style="--en-task-group:true; --en-id:9eb3f8db-3e44-4745-b088-047663276d8f;--en-content-hash:9eb122e42e0a1189fec465d4cc838ad1;-webkit-user-modify:read-only;-moz-user-modify:read-only;user-modify:read-only;border-radius:3px;border:1px solid rgba(182,182,182,0.09);background:rgba(174,174,174,0.09);overflow:hidden;color:#868686"><div style="background:rgba(182,182,182,0.09) no-repeat 6px 6px url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzg2ODY4NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjcyNTEgMjBDMjAuMTgxIDIwIDIwLjYwMTEgMTkuNzU2IDIwLjgyOSAxOS4zNkMyMS4wNTcgMTguOTY0IDIxLjA1NyAxOC40NzYgMjAuODI5IDE4LjA4TDEzLjEwMzEgNC42Mzk5OUMxMi44NzYgNC4yNDM5OSAxMi40NTUxIDQgMTIgNEMxMS41NDQ5IDQgMTEuMTI0IDQuMjQzOTkgMTAuODk2MSA0LjYzOTk5TDMuMTcwOTggMTguMDhDMi45NDMwMSAxOC40NzYgMi45NDMwMSAxOC45NjQgMy4xNzA5OCAxOS4zNkMzLjM5ODEgMTkuNzU2IDMuODE4OTMgMjAgNC4yNzQwOCAyMEgxOS43MjUxWk00Ljg2NDg5IDE4LjRMMTIgNS45ODc5OEwxOS4xMzUxIDE4LjRINC44NjQ4OVoiLz4KPHBhdGggZD0iTTEyLjc1IDEwLjU3NTJDMTIuNzUgMTAuMTYxIDEyLjQxNDIgOS44MjUyMyAxMiA5LjgyNTIzQzExLjU4NTggOS44MjUyMyAxMS4yNSAxMC4xNjEgMTEuMjUgMTAuNTc1MlYxMy4yOTc5QzExLjI1IDEzLjcxMjEgMTEuNTg1OCAxNC4wNDc5IDEyIDE0LjA0NzlDMTIuNDE0MiAxNC4wNDc5IDEyLjc1IDEzLjcxMjEgMTIuNzUgMTMuMjk3OVYxMC41NzUyWiIvPgo8cGF0aCBkPSJNMTIuODc1IDE1Ljk1MTFDMTIuODc1IDE2LjQzNDQgMTIuNDgzMiAxNi44MjYxIDEyIDE2LjgyNjFDMTEuNTE2OCAxNi44MjYxIDExLjEyNSAxNi40MzQ0IDExLjEyNSAxNS45NTExQzExLjEyNSAxNS40Njc5IDExLjUxNjggMTUuMDc2MSAxMiAxNS4wNzYxQzEyLjQ4MzIgMTUuMDc2MSAxMi44NzUgMTUuNDY3OSAxMi44NzUgMTUuOTUxMVoiLz4KPC9zdmc+Cg==&quot;);padding:8px 38px;font-weight:600">Content not supported</div><div style="padding:2px 6px;margin: 1em">This block is a placeholder for Tasks, which has been officially released on the newest version of Evernote and is no longer supported on this version. Deleting or moving this block may cause unexpected behavior in newer versions of Evernote.</div></div><div><br/></div><div>DEADLINE 1/12/2023</div></en-note>      ]]>
+    </content>
+    <task>
+      <title>Complete add Login into NXC application.</title>
+      <created>20231129T093201Z</created>
+      <updated>20231129T093201Z</updated>
+      <taskStatus>open</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>B</sortWeight>
+      <noteLevelID>634959bd-b896-4f7f-a362-d2a746a6efbd</noteLevelID>
+      <taskGroupNoteLevelID>9eb3f8db-3e44-4745-b088-047663276d8f</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20231129T093201Z</statusUpdated>
+      <creator>243343120</creator>
+      <lastEditor>243343120</lastEditor>
+    </task>
+    <task>
+      <title>Turn-off Wordpress - Fargate</title>
+      <created>20231129T093201Z</created>
+      <updated>20231129T093201Z</updated>
+      <taskStatus>open</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>V</sortWeight>
+      <noteLevelID>3c8fa580-680f-4928-892e-09624b020855</noteLevelID>
+      <taskGroupNoteLevelID>9eb3f8db-3e44-4745-b088-047663276d8f</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20231129T093201Z</statusUpdated>
+      <creator>243343120</creator>
+      <lastEditor>243343120</lastEditor>
+    </task>
+    <task>
+      <title>Re-open Wordpress - EC2 / Config IP</title>
+      <created>20231129T093201Z</created>
+      <updated>20231129T093201Z</updated>
+      <taskStatus>open</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>R</sortWeight>
+      <noteLevelID>4c34d0fe-e57f-44bf-bddf-1241e7cba90b</noteLevelID>
+      <taskGroupNoteLevelID>9eb3f8db-3e44-4745-b088-047663276d8f</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20231129T093201Z</statusUpdated>
+      <creator>243343120</creator>
+      <lastEditor>243343120</lastEditor>
+    </task>
+    <task>
+      <title>Upload NXC application into AWS EC2</title>
+      <created>20231129T093201Z</created>
+      <updated>20231129T093201Z</updated>
+      <taskStatus>open</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>J</sortWeight>
+      <noteLevelID>efc8c3d1-0aa3-4863-873b-effc6bec0ef4</noteLevelID>
+      <taskGroupNoteLevelID>9eb3f8db-3e44-4745-b088-047663276d8f</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20231129T093201Z</statusUpdated>
+      <creator>243343120</creator>
+      <lastEditor>243343120</lastEditor>
+    </task>
+  </note>
+  <note>
+    <title>Note 11-29-2023</title>
+    <created>20231129T094541Z</created>
+    <updated>20231129T095942Z</updated>
+    <note-attributes>
+      <author>Ha Dang</author>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Long's code review:</div><div><br/></div><ul><ul><li><div>Not sure about Dependence Injection - flow</div></li><li><div>GenericRepository just gather same function can be use at any Repository</div></li><li><div>Don't call direct GenericRepository without create in specific Repository. (Long call direct).</div></li></ul></ul></en-note>      ]]>
+    </content>
+  </note>
+</en-export>
