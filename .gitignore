@@ -2,3 +2,6 @@ crawler
 *.pkl
 lost_ark
 angular
+resource
+excelFiles
+markdown
