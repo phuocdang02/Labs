@@ -5,3 +5,4 @@ angular
 resource
 excelFiles
 markdown
+*.pdf

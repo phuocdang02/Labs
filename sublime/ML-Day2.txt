@@ -13,4 +13,8 @@ MODELS:
     Specificity = Negative
 
 
+TP - yes, yes
+FP - no, yes
+FN - no, no
+TN - yes, no
     
