@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+  # MySQL Database Server
+  db:
+    image: mysql:8.0
+    container_name: moodle-db
+    command: --innodb-use-native-aio=0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mms_root_password
+      MYSQL_DATABASE: mms_moodle
+      MYSQL_USER: moodle_dbuser
+      MYSQL_PASSWORD: MMs123456*
+    ports:
+      - "6789:3306"
+    volumes:
+      - moodle-db-data:/var/lib/mysql
+    networks:
+      - moodle-network
+
+  # Moodle Web Server
+  moodle:
+    image: moodlehq/moodle-php-apache:8.0
+    container_name: moodle-app
+    depends_on:
+      - db
+    restart: always
+    environment:
+      MOODLE_DB_TYPE: mysqli
+      MOODLE_DB_HOST: db
+      MOODLE_DB_PORT: 3306
+      MOODLE_DB_NAME: mms_moodle
+      MOODLE_DB_USER: moodle_dbuser
+      MOODLE_DB_PASS: MMs123456*
+      MOODLE_URL: http://0.0.0.0:80/moodle
+      MOODLE_ADMIN: mms_admin@mmsofts.com
+      MOODLE_ADMIN_PASSWORD: MMS123456
+      MOODLE_ADMIN_EMAIL: hpdang@mmsofts.com
+    volumes:
+      - ./moodle:/var/www/html/moodle
+      # - moodle-app-data:/var/www/html/moodle
+    ports:
+      - "80:80"
+    networks:
+      - moodle-network
+
+volumes:
+  moodle-db-data:
+    driver: local
+  moodle-app-data:
+    driver: local
+
+networks:
+  moodle-network:

@@ -6,3 +6,7 @@ resource
 excelFiles
 markdown
 *.pdf
+meta/moodle-docker
+custom
+docker
+.vscode
