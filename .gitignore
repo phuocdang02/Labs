@@ -1,14 +1,6 @@
-crawler
-*.pkl
-lost_ark
-angular
-resource
-excelFiles
-markdown
-*.pdf
 meta/moodle-docker
 custom
 docker
 .vscode
 meta/docker-compose.yaml
-meta\moodle\config.php
+meta/moodle/config.php
