@@ -10,4 +10,4 @@ meta/moodle-docker
 custom
 docker
 .vscode
-meta\docker-compose.yaml
+meta/docker-compose.yaml
