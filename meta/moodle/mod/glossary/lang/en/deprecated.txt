@@ -1,2 +1,0 @@
-waitingapproval,mod_glossary
-completionentriesgroup,mod_glossary
