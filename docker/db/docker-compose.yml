@@ -1,0 +1,20 @@
+version: "1.0"
+services:
+  standalone_mysql:
+    image: mysql:8.0
+    container_name: standalone-db
+    ports:
+      - "6789:3306"
+    environment:
+      # MYSQL_HOST: standalone_mysql
+      MYSQL_DATABASE: mms_standalone
+      MYSQL_USER: mms_admin
+      MYSQL_PASSWORD: MMs123456*
+      MYSQL_ROOT_PASSWORD: root
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always
+    volumes:
+      - mms_standalone_data:/var/lib/mysql
+
+volumes:
+  mms_standalone_data:

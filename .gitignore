@@ -1,7 +1,0 @@
-meta/moodle-docker
-custom
-docker
-.vscode
-meta/docker-compose.yaml
-meta/moodle/config.php
-*.zip

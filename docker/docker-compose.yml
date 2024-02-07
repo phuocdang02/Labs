@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  # mmscapp_fe:
+  #   # build:
+  #   #   context: .
+  #   #   dockerfile: Dockerfile.fe
+  #   image: mmscapp_fe:latest
+  #   container_name: mmscapp_fe
+  #   ports:
+  #     - "80:80"
+  #   networks:
+  #     - mmscapp_network
+  #   depends_on:
+  #     - mmscapp_be
+  #   restart: always
+
+  pinvision-mapper-api:
+    image: pinvision-mapper-api:latest
+    container_name: pinvision-mapper-api
+    ports:
+      - "8910:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - mmscapp_network
+    restart: always
+
+  mmscapp_db:
+    image: mysql:latest
+    container_name: mmscapp_database
+    ports:
+      - "6789:3306"
+    restart: always
+    environment:
+      MYSQL_DATABASE: mmscapp
+      MYSQL_USER: mmscapp_dbuser
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: root
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - mmscapp_db_data:/var/lib/mysql
+      # - ./Database/mmsc-database-2023dec07.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - mmscapp_network
+
+networks:
+  mmscapp_network:
+    driver: bridge
+
+volumes:
+  mmscapp_db_data:
