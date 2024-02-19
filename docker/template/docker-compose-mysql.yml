@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:<version>
+    restart: unless-stopped #|| always
+    environment:
+      # Authentication
+      MYSQL_ROOT_PASSWORD: "your_strong_password"
+      MYSQL_DATABASE: "your_database_name"
+      MYSQL_USER: "your_database_user"
+      MYSQL_PASSWORD: "your_database_user_password"
+
+      # Character Set & Collation
+      MYSQL_CHARSET: "utf8mb4"
+      MYSQL_COLLATION_SERVER: "utf8mb4_unicode_ci"
+
+      # Replication
+      MYSQL_MASTER_HOST: "" # Set if acting as slave
+      MYSQL_REPLICA_USER: "" # Set if acting as slave
+      MYSQL_REPLICA_PASSWORD: "" # Set if acting as slave
+
+      # Resource Limits
+      MYSQL_MAX_ALLOWED_PACKET: 16M
+      MYSQL_INNODB_BUFFER_POOL_SIZE: 128M
+
+      # Other Options
+      MYSQL_INITDB_SKIP_NAMES: YES # Skip setting up the initial test database
+      MYSQL_STRICT_TRANS_TABLES: ON # Strict mode for transactions
+      MYSQL_DEFAULT_STORAGE_ENGINE: InnoDB # Set default storage engine
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - network_name
+
+networks:
+  network_name:
+
+volumes:
+  mysql_data:

@@ -1,1 +1,7 @@
-docker/db/mmsc.sql
+custom
+
+docker/db
+docker/pinvision
+docker/bot
+
+python
