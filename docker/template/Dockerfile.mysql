@@ -1,0 +1,31 @@
+FROM mysql:8.0
+
+# Authentication
+ENV MYSQL_ROOT_PASSWORD="your_strong_password"
+ENV MYSQL_DATABASE="your_database_name"
+ENV MYSQL_USER="your_database_user"
+ENV MYSQL_PASSWORD="your_database_user_password"
+
+# Character Set & Collation
+ENV MYSQL_CHARSET="utf8mb4"
+ENV MYSQL_COLLATION_SERVER="utf8mb4_unicode_ci"
+
+# Replication (omit if not needed)
+ENV MYSQL_MASTER_HOST=""
+ENV MYSQL_REPLICA_USER=""
+ENV MYSQL_REPLICA_PASSWORD=""
+
+# Resource Limits
+ENV MYSQL_MAX_ALLOWED_PACKET=16M
+ENV MYSQL_INNODB_BUFFER_POOL_SIZE=128M
+
+# Other Options
+ENV MYSQL_INITDB_SKIP_NAMES=YES
+ENV MYSQL_STRICT_TRANS_TABLES=ON
+ENV MYSQL_DEFAULT_STORAGE_ENGINE=InnoDB
+
+# Copy initialization scripts to the Docker entrypoint directory
+COPY your_sql_file.sql /docker-entrypoint-initdb.d/
+
+# Optional
+# CMD ["mysqld"] 

@@ -1,0 +1,57 @@
+FROM php:7.4-apache-buster
+
+# Update package sources and install neccessary dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libzip-dev \
+    libonig-dev \
+    libxml2-dev \
+    libxslt-dev \
+    libssl-dev \
+    unzip \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd pdo pdo_mysql zip soap xsl mysqli
+
+# SSL Certificate Configurations
+COPY source /etc/ssl/certificates
+
+# Enable Apache modules
+RUN a2enmod rewrite && a2enmod ssl
+
+# Copy configuration of SSL certificate for virtual hosts
+COPY source /etc/apache2/sites-available/ssl.conf
+
+# Copy configuration of non-SSL certificate for virtual hosts
+COPY source /etc/apache2/sites-available/web.conf
+
+# Copy built source to the container
+COPY source /var/www/html
+
+# Disable the default configuration
+RUN a2dissite 000-default.conf
+
+# Enable SSL certificate and non-SSL certificate sites
+RUN a2ensite ssl.conf && a2ensite web.conf
+
+# Configure ip address listening
+RUN sed -i "s/Listen 80/Listen 0.0.0.0:80/" /etc/apache2/ports.conf
+
+# Expose port
+EXPOSE 80
+
+# Set environment variables
+ENV APACHE_LISTEN_PORT=80
+ENV APACHE_DOCUMENT_ROOT=/var/www/html
+
+# Set folder/file permissions
+RUN chown -R www-data:www-data /var/www/html/source \
+    && chmod 775 -R /var/www/html/source \
+    && chmod 775 /var/www/html/source/wp-includes/class-wp-image-editor.php
+
+# Set working directory
+WORKDIR /var/www/html/
+
+# Clean up temporary
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
