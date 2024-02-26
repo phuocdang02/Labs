@@ -66,8 +66,7 @@ class Users {
 
   static async checkUsernameOrEmail(username, email) {
     try {
-      const query =
-        "SELECT username, email FROM users WHERE username = ? OR email = ?";
+      const query = "SELECT * FROM users WHERE username = ? OR email = ?";
       const [result] = await pool.query(query, [email, username]);
       return result;
     } catch (error) {

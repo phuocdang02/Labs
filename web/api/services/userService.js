@@ -1,6 +1,6 @@
 import User from "../models/Users";
 
-exports.insertUser = async (data) => {
+exports.insert = async (data) => {
   try {
     const result = await User.insert(data);
     return result;
@@ -11,7 +11,7 @@ exports.insertUser = async (data) => {
 
 exports.checkAccount = async (username, email) => {
   try {
-    const user = await User.getUsernameOrEmail(username, email);
+    const user = await User.checkUsernameOrEmail(username, email);
     return user;
   } catch (error) {
     throw new Error(error);
