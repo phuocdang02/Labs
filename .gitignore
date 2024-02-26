@@ -5,3 +5,5 @@ docker/pinvision
 docker/bot
 
 python
+
+app/node_modules
