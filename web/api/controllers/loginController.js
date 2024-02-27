@@ -30,7 +30,7 @@ exports.login = async (req, res) => {
 
 exports.register = async (req, res) => {
   try {
-    const {} = req.body;
+    const { username, password } = req.body;
 
     //Check duplicate phonenumber or email
     const check = await userService.checkAccount(username, email);

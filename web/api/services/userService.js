@@ -1,4 +1,4 @@
-import User from "../models/Users";
+const User = require("../models/Users");
 
 exports.insert = async (data) => {
   try {

@@ -7,7 +7,7 @@ class Users {
       const query = `
         CREATE TABLE IF NOT EXISTS user (
           user_id CHAR(36) PRIMARY KEY,
-          user_name VARCHAR(255) NOT NULL,
+          username VARCHAR(255) NOT NULL,
           dob DATE NOT NULL,
           id_number NVARCHAR(12) NOT NULL,
           issue_date DATE NOT NULL,
@@ -15,7 +15,7 @@ class Users {
           fullname VARCHAR(255),
           phone_number VARCHAR(9),
           email VARCHAR(255) UNIQUE NOT NULL,
-          hashed_password VARCHAR(255) NOT NULL,  // Renamed for clarity and security
+          hashpassword VARCHAR(255) NOT NULL,  // Renamed for clarity and security
           profile_pic VARCHAR(255),
           organizer_id CHAR(36) NOT NULL,
           role_id CHAR(36) NOT NULL,
