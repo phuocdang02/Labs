@@ -1,9 +1,3 @@
-# nxwitness-integration/
-
-docker/db
-docker/pinvision
-docker/bot
-
-python
-rmb.txt
-*/node_modules
+# Dependencies
+/node_modules
+/.vscode

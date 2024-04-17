@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mariadb:
+    image: mariadb
+    ports:
+      - "1476:3306"
+    environment:
+      - MARIADB_DATABASE=m_mmsofts_com_nfc
+      - MARIADB_USER=nfc_dbuser
+      - MARIADB_PASSWORD=NFC1@3456s
+      - MARIADB_ROOT_PASSWORD=root
+    
