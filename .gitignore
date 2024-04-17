@@ -5,5 +5,5 @@ docker/pinvision
 docker/bot
 
 python
-*.txt
+rmb.txt
 */node_modules
