@@ -1,4 +1,4 @@
-nxwitness-integration/
+# nxwitness-integration/
 
 docker/db
 docker/pinvision
@@ -6,4 +6,4 @@ docker/bot
 
 python
 
-app/node_modules
+*/node_modules
