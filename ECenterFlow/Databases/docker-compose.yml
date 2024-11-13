@@ -1,15 +1,15 @@
 version: "3.9"
 
 services:
-  tm_db:
+  ECFDatabase:
     image: mysql:latest
     restart: none
     environment:
       # Authentication
       MYSQL_ROOT_PASSWORD: "root_password"
-      MYSQL_DATABASE: "tm_database"
-      MYSQL_USER: "tm_admin"
-      MYSQL_PASSWORD: "tm_password"
+      MYSQL_DATABASE: "ecf_database"
+      MYSQL_USER: "ecf_admin"
+      MYSQL_PASSWORD: "ecf_password"
 
       # Character Set & Collation
       MYSQL_CHARSET: "utf8mb4"
@@ -25,15 +25,15 @@ services:
       MYSQL_DEFAULT_STORAGE_ENGINE: InnoDB # Set default storage engine
     
     volumes:
-      - tm_data:/var/lib/mysql
+      - ecf_data:/var/lib/mysql
     ports:
       - "3333:3306"
     networks:
-      - tm_network
+      - ec_network
 
 networks:
-  tm_network:
+  ecf_network:
 
 volumes:
-  tm_data:
+  ecf_data:
   

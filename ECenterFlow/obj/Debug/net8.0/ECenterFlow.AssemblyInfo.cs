@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECenterFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6343c4caf55e605a3a052eb2655c3f7bf8b5704d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ab641a1e321463dbc31d046954ce704f64b4220")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECenterFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECenterFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
