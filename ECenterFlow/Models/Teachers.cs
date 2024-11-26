@@ -11,9 +11,9 @@ namespace ECenterFlow.Models
         [Column("id")]
         public required Guid Id { get; set; }
 
-        [Required]
-        [Column("teacher_id")]
-        public required string TeacherId { get; set; }
+        //[Required]
+        //[Column("teacher_id")]
+        //public required string TeacherId { get; set; }
 
         [Required]
         [Column("fullname")]
@@ -25,6 +25,7 @@ namespace ECenterFlow.Models
 
         [Required]
         [Column("email")]
+        [EmailAddress]
         public required string EmailAddress { get; set; }
     }
 }

@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECenterFlow.Models
 {
-    [Table("levels")]
-    public class Levels
+    [Table("rooms")]
+    public class Rooms
     {
         [Key]
         [Required]
@@ -12,12 +12,8 @@ namespace ECenterFlow.Models
         public required Guid Id { get; set; }
 
         [Required]
-        [Column("name")]
-        public required string Name { get; set; }
-
-        [Required]
-        [Column("course")]
-        public required Guid Course { get; set; }
+        [Column("no")]
+        public required string No { get; set; }
 
         [Column("description")]
         public string? Description { get; set; }
