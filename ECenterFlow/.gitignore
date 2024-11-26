@@ -2,6 +2,13 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+# Dependencies
+/obj
+/Log
+/bin
+/backup
+/debug
+
 # .NET
 bin/
 obj/
@@ -14,6 +21,10 @@ obj/
 *.pdb
 *.dll
 *.exe
+/.ionide
+*.sln
+*.csproj.user
+*.yaml
 
 # Visual Studio Code
 .vscode/
