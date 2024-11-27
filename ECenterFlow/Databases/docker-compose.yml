@@ -29,7 +29,7 @@ services:
     ports:
       - "3333:3306"
     networks:
-      - ec_network
+      - ecf_network
 
 networks:
   ecf_network:
