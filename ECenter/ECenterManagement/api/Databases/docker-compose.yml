@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  ECMDatabase:
+    image: mysql:latest
+    restart: always
+    environment:
+      # Authentication
+      MYSQL_ROOT_PASSWORD: "root_password"
+      MYSQL_DATABASE: "ecm_database"
+      MYSQL_USER: "ecm_admin"
+      MYSQL_PASSWORD: "ecm_password"
+
+      # Character Set & Collation
+      MYSQL_CHARSET: "utf8mb4"
+      MYSQL_COLLATION_SERVER: "utf8mb4_unicode_ci"
+
+      # Resource Limits
+      MYSQL_MAX_ALLOWED_PACKET: 16M
+      MYSQL_INNODB_BUFFER_POOL_SIZE: 128M
+
+      # Other Options
+      MYSQL_INITDB_SKIP_NAMES: YES # Skip setting up the initial test database
+      MYSQL_STRICT_TRANS_TABLES: OFF # Strict mode for transactions
+      MYSQL_DEFAULT_STORAGE_ENGINE: InnoDB # Set default storage engine
+    
+    volumes:
+      - ecm_data:/var/lib/mysql
+    ports:
+      - "3333:3306"
+    networks:
+      - ecm_network
+
+networks:
+  ecm_network:
+
+volumes:
+  ecm_data:
+  

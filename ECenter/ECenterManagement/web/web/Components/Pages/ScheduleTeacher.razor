@@ -1,0 +1,72 @@
+﻿@* @page "/schedule" *@
+@* @using web.Models *@
+@* @inject HttpClient Http *@
+
+@* <h3>Schedule a Teacher</h3> *@
+
+@* <EditForm Model="schedule" OnValidSubmit="HandleSubmit"> *@
+@*     <DataAnnotationsValidator /> *@
+@*     <ValidationSummary /> *@
+
+@*     <div> *@
+@*         <label for="teacher">Teacher</label> *@
+@*         <select id="teacher" @bind="schedule.TeacherId"> *@
+@*             @foreach (var teacher in teachers) *@
+@*             { *@
+@*                 <option value="@teacher.Id">@teacher.FullName</option> *@
+@*             } *@
+@*         </select> *@
+@*     </div> *@
+
+@*     <div> *@
+@*         <label for="day">Day of the week</label> *@
+@*         <input type="text" id="day" @bind="schedule.StartDate" /> *@
+@*     </div> *@
+
+@*     <div> *@
+@*         <label for="time">Time Slot</label> *@
+@*         <input type="text" id="time" @bind="schedule.EndDate" /> *@
+@*     </div> *@
+
+@*     <button type="submit">Schedule</button> *@
+@* </EditForm> *@
+
+@* @code { *@
+@*     private List<Teachers> teachers = new(); *@
+@*     private Schedules schedule = new(); *@
+
+@*     protected override async Task OnInitializedAsync() *@
+@*     { *@
+@*         try *@
+@*         { *@
+@*             teachers = await Http.GetFromJsonAsync<List<Teachers>>("/api/teachers") ?? new List<Teachers>(); *@
+@*         } *@
+@*         catch (Exception ex) *@
+@*         { *@
+@*             Console.WriteLine($"Error loading teachers: {ex.Message}"); *@
+@*             teachers = new List<Teachers>(); *@
+@*         } *@
+@*     } *@
+
+@*     private async Task HandleSubmit() *@
+@*     { *@
+@*         try *@
+@*         { *@
+@*             HttpResponseMessage response = await Http.PostAsJsonAsync("api/schedule", schedule); *@
+@*             if (response.IsSuccessStatusCode) *@
+@*             { *@
+@*                 // Handle success *@
+@*                 Console.WriteLine($"Teacher scheduled successfully!"); *@
+@*             } *@
+@*             else *@
+@*             { *@
+@*                 // Handle failure *@
+@*                 Console.WriteLine("Failed to scheduled teacher."); *@
+@*             } *@
+@*         } *@
+@*         catch (Exception ex) *@
+@*         { *@
+@*             Console.WriteLine($"Error submitting schedule: {ex.Message}"); *@
+@*         } *@
+@*     } *@
+@* } *@

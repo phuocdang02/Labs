@@ -1,0 +1,42 @@
+﻿@page "/teachers"
+@using web.Models
+@inject HttpClient Http
+
+<h3>Teacher List</h3>
+
+@if (teachers == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var teacher in teachers)
+    {
+        <ul>
+            <li>@teacher.FullName</li>
+            <li>@teacher.Phone</li>
+            <li>@teacher.BusinessEmailAddress</li>
+            <li>@teacher.PersonalEmailAddress</li>
+            <li>@teacher.Id</li>
+        </ul>
+    }
+}
+
+
+@code {
+    private List<Teachers> teachers = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            teachers = await Http.GetFromJsonAsync<List<Teachers>>("api/teachers") ?? new List<Teachers>();
+        }
+        catch (Exception ex)
+        {
+            //Handle exceptions (e.g., API call failure)
+            Console.WriteLine($"Error loading teachers: {ex.Message}");
+            teachers = new List<Teachers>(); //Ensure teachers isn't null
+        }
+    }
+}
