@@ -1,14 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace web.Models
+﻿namespace web.Models
 {
     public class Teachers
     {
-        public required Guid Id { get; set; }
-        public required string FullName { get; set; }
-        public required string Phone { get; set; }
-        public required string PersonalEmailAddress { get; set; }
-        public required string BusinessEmailAddress { get; set; }
+        public Guid Id { get; set; }
+        public string FullName { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
+        public string PersonalEmailAddress { get; set; } = string.Empty;
+        public string BusinessEmailAddress { get; set; } = string.Empty;
+        public List<Schedules>? Schedules { get; set; }
     }
 }

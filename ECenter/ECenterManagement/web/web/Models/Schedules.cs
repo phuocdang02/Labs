@@ -5,9 +5,9 @@ namespace web.Models
 {
     public class Schedules
     {
-        public required Guid Id { get; set; }
+        public Guid Id { get; set; }
         public Guid TeacherId { get; set; }
-        public string ClassName { get; set; }
+        public string ClassName { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }

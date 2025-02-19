@@ -1,0 +1,28 @@
+﻿@page "/schedules"
+@using web.Models
+@inject HttpClient Http
+
+<h3>ScheduleList</h3>
+
+@if (schedules == null)
+{
+    <p>Loading...</p>
+}
+else {
+    <ul>
+        @foreach (var schedule in schedules){
+            <li>
+                @schedule.ClassName - @schedule.StartDate.ToShortDateString() to @schedule.EndDate.ToShortDateString()
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Schedules>? schedules;
+
+    protected override async Task OnInitializedAsync()
+    {
+        schedules = await Http.GetFromJsonAsync<List<Schedules>>("/api/teachers/schedules");
+    }
+}

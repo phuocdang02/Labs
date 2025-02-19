@@ -16,14 +16,14 @@ namespace api.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Teachers>> GetTeachers()
+        public ActionResult<List<Teacher>> GetTeachers()
         {
             var teachers = _fakeDataService.GenerateFakeTeachers(10);
             return Ok(teachers);
         }
 
         [HttpGet("schedules")]
-        public ActionResult<List<Schedules>> GetSchedules()
+        public ActionResult<List<Schedule>> GetSchedules()
         {
             var teachers = _fakeDataService.GenerateFakeTeachers(10);
 
