@@ -12,15 +12,15 @@ using api.DbContexts;
 namespace api.Migrations
 {
     [DbContext(typeof(ECenterDbContext))]
-    [Migration("20250219093048_InitCreate")]
-    partial class InitCreate
+    [Migration("20250220092033_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.11")
+                .HasAnnotation("ProductVersion", "8.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -29,26 +29,21 @@ namespace api.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)")
-                        .HasColumnName("id");
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("ClassName")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("class");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime(6)")
-                        .HasColumnName("end_date");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime(6)")
-                        .HasColumnName("start_date");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Subject")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("subject");
+                        .HasColumnType("longtext");
 
                     b.Property<Guid>("TeacherId")
                         .HasColumnType("char(36)");
@@ -57,39 +52,34 @@ namespace api.Migrations
 
                     b.HasIndex("TeacherId");
 
-                    b.ToTable("schedules");
+                    b.ToTable("Schedules");
                 });
 
             modelBuilder.Entity("api.Models.Teacher", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)")
-                        .HasColumnName("id");
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("BusinessEmailAddress")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("business_email");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("full_name");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("PersonalEmailAddress")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("personal_email");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("phone");
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("teachers");
+                    b.ToTable("Teachers");
                 });
 
             modelBuilder.Entity("api.Models.Schedule", b =>

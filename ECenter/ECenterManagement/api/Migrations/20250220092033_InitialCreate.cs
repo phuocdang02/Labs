@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace api.Migrations
 {
     /// <inheritdoc />
-    public partial class InitCreate : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,53 +15,53 @@ namespace api.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "teachers",
+                name: "Teachers",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
-                    full_name = table.Column<string>(type: "longtext", nullable: false)
+                    Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
+                    FullName = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    phone = table.Column<string>(type: "longtext", nullable: false)
+                    Phone = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    personal_email = table.Column<string>(type: "longtext", nullable: false)
+                    PersonalEmailAddress = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    business_email = table.Column<string>(type: "longtext", nullable: false)
+                    BusinessEmailAddress = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_teachers", x => x.id);
+                    table.PrimaryKey("PK_Teachers", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "schedules",
+                name: "Schedules",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
+                    Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TeacherId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
-                    @class = table.Column<string>(name: "class", type: "longtext", nullable: false)
+                    ClassName = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    start_date = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    end_date = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    subject = table.Column<string>(type: "longtext", nullable: false)
+                    StartDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Subject = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_schedules", x => x.id);
+                    table.PrimaryKey("PK_Schedules", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_schedules_teachers_TeacherId",
+                        name: "FK_Schedules_Teachers_TeacherId",
                         column: x => x.TeacherId,
-                        principalTable: "teachers",
-                        principalColumn: "id",
+                        principalTable: "Teachers",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_schedules_TeacherId",
-                table: "schedules",
+                name: "IX_Schedules_TeacherId",
+                table: "Schedules",
                 column: "TeacherId");
         }
 
@@ -69,10 +69,10 @@ namespace api.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "schedules");
+                name: "Schedules");
 
             migrationBuilder.DropTable(
-                name: "teachers");
+                name: "Teachers");
         }
     }
 }

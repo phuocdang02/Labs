@@ -1,9 +1,16 @@
 using api.Configuration;
 using api.DbContexts;
+using api.Models;
+using api.Repositories;
 using api.Services;
+using api.Services.Interface;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,12 +42,42 @@ string mySqlConnectionStr = builder.Configuration.GetConnectionString("ECenterFl
 services.AddDbContext<ECenterDbContext>(
     options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
-// Dependency Injection (Unit of Work, Services, etc.)
+#region Dependency Injection (Unit of Work, Services, etc.)
 services.AddScoped<IUnitOfWork, UnitOfWork>();
-services.AddScoped<FakeDataService>();
+services.AddScoped<FakeDataService>(); // Registered Bogus(Fake data generator)
+
+services.AddScoped<IRepository<Teacher>, TeacherRepository>();
+services.AddScoped<IRepository<Schedule>, ScheduleRepository>();
+services.AddScoped<ITeacherService, TeacherService>();
+services.AddScoped<IScheduleService, ScheduleService>();
+#endregion
 
 // Controllers and Endpoints
 services.AddControllers();
+
+// Add Identity
+services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ECenterDbContext>()
+    .AddDefaultTokenProviders();
+
+// Configure JWT Authentication
+services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
+        };
+    });
+services.AddAuthorization();
 services.AddEndpointsApiExplorer();
 
 // CORS Policy
@@ -93,7 +130,7 @@ services.AddSwaggerGen(c =>
     });
 });
 
-// Build App
+// Build Application
 var app = builder.Build();
 
 // Logging
