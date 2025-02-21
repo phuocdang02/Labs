@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 namespace api.Repositories;
 
 /// <summary>
-/// Teacher repository
+/// Schedule repository
 /// </summary>
-public class TeacherRepository : IRepository<Teacher>
+public class ScheduleRepository: IRepository<Schedule>
 {
     private readonly ECenterDbContext _context;
 
@@ -15,64 +15,64 @@ public class TeacherRepository : IRepository<Teacher>
     /// Initializes a new instance of the context
     /// </summary>
     /// <param name="context"></param>
-    public TeacherRepository(ECenterDbContext context)
+    public ScheduleRepository(ECenterDbContext context)
     {
         _context = context;
     }
 
     /// <summary>
-    /// Gets all teachers from database
+    /// Gets all schedules from database
     /// </summary>
     /// <returns></returns>
-    public async Task<List<Teacher>> GetAllAsync()
+    public async Task<List<Schedule>> GetAllAsync()
     {
-        return await _context.Teachers.ToListAsync();
+        return await _context.Schedules.ToListAsync();
     }
 
     /// <summary>
-    /// Gets a teacher by ID
+    /// Gets a schedule by ID
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>
-    public async Task<Teacher?> GetByIdAsync(Guid id)
+    public async Task<Schedule?> GetByIdAsync(Guid id)
     {
-        return await _context.Teachers.FindAsync(id);
+        return await _context.Schedules.FindAsync(id);
     }
 
     /// <summary>
-    /// Adds a new teacher to database
+    /// Adds a new schedule to database
     /// </summary>
-    /// <param name="teacher"></param>
+    /// <param name="schedule"></param>
     /// <returns></returns>
-    public async Task<Teacher> AddAsync(Teacher teacher)
+    public async Task<Schedule> AddAsync(Schedule schedule)
     {
-        _context.Teachers.Add(teacher);
+        _context.Schedules.Add(schedule);
         await _context.SaveChangesAsync();
-        return teacher;
+        return schedule;
     }
 
     /// <summary>
-    /// Updates an existing teacher
+    /// Updates an existing schedule
     /// </summary>
-    /// <param name="teacher"></param>
+    /// <param name="schedule"></param>
     /// <returns></returns>
-    public async Task<bool> UpdateAsync(Teacher teacher)
+    public async Task<bool> UpdateAsync(Schedule schedule)
     {
-        _context.Teachers.Update(teacher);
+        _context.Schedules.Update(schedule);
         return await _context.SaveChangesAsync() > 0;
     }
 
     /// <summary>
-    /// Deletes a teacher by ID
+    /// Deletes a schedule by ID 
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>
     public async Task<bool> DeleteAsync(Guid id)
     {
-        var teacher = await _context.Teachers.FindAsync(id);
-        if (teacher == null) return false;
+        var schedule = await _context.Schedules.FindAsync(id);
+        if (schedule == null) return false;
 
-        _context.Teachers.Remove(teacher);
+        _context.Schedules.Remove(schedule);
         return await _context.SaveChangesAsync() > 0;
     }
 }
